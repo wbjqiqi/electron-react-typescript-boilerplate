@@ -26,7 +26,7 @@ Instead of [Babel](https://babeljs.io) and [flow](https://flowtype.org) this ver
 First, clone the repo via git:
 
 ```bash
-git clone https://github.com/iRath96/electron-react-typescript-boilerplate.git your-project-name
+git clone https://github.com/wbjqiqi/electron-react-typescript-boilerplate.git your-project-name
 ```
 
 And then install dependencies.
