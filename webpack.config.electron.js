@@ -25,7 +25,7 @@ module.exports = merge(baseConfig, {
     //   { raw: true, entryOnly: false }
     // ),
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production')
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     })
   ],
 

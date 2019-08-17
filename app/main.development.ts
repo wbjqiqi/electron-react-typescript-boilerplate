@@ -1,8 +1,8 @@
-const { app, BrowserWindow, Menu, shell } = require('electron');
+import { app, BrowserWindow, Menu, shell } from 'electron';
 
-let menu;
-let template;
-let mainWindow = null;
+let menu: Menu;
+let template: any;
+let mainWindow: any = null;
 
 if (process.env.NODE_ENV === 'production') {
   const sourceMapSupport = require('source-map-support'); // eslint-disable-line
@@ -61,7 +61,7 @@ app.on('ready', () =>
 
   if (process.env.NODE_ENV === 'development') {
     mainWindow.openDevTools();
-    mainWindow.webContents.on('context-menu', (e, props) => {
+    mainWindow.webContents.on('context-menu', (e: any, props: any) => {
       const { x, y } = props;
 
       Menu.buildFromTemplate([{
